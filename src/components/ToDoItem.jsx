@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const ToDoItem = (props) => {
+const ToDoItem = ({ item, handleChange }) => {
   return (
     <div className="todo-item">
       <input
         type="checkbox"
-        checked={props.item.completed}
-        onChange={() => props.handleChange(props.item.id)}
+        checked={item.completed}
+        onChange={() => handleChange(item.id)}
       />
-      <p>{props.item.text}</p>
+      <p>{item.text}</p>
     </div>
-  )
-}
+  );
+};
 
-export default ToDoItem
+export default ToDoItem;
