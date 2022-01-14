@@ -1,10 +1,13 @@
-import React from "react"
+import React from "react";
 
-import ToDoItem from "./ToDoItem"
+import todosData from "../todosData";
+import ToDoItem from "./ToDoItem";
 
 const App = () => {
   return (
     <div className="todo-list">
+      <ToDoItem />
+      <ToDoItem />
       <ToDoItem />
       <ToDoItem />
       <ToDoItem />
